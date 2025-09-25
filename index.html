@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emilin “Emi” Mathew — Portfolio</title>
+    <meta name="description" content="Software engineer building at the intersection of tech, health, and fashion. Projects, experience, and contact." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="#top">emi</a>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌗</button>
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="cta">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <h1><span class="accent">Emi</span> Mathew</h1>
+          <p class="kicker">Software Engineer • Healthtech • AI • Fashion-adjacent</p>
+          <p class="lede">I design and build humble, high-impact systems at the intersection of <strong>tech</strong>, <strong>health</strong>, and <strong>modern aesthetics</strong>. Currently recruiting for new grad SWE roles.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">See projects</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/emilin-mathew/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/emilinmathew" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="stat">
+            <div class="stat-number">95%</div>
+            <div class="stat-label">accuracy in bio ML</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">97%</div>
+            <div class="stat-label">cut in analysis time</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">$5M+</div>
+            <div class="stat-label">portfolio diligence</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Highlights from internships, research, and startups.</p>
+        </div>
+        <div class="timeline">
+          <article class="card reveal">
+            <header>
+              <h3>Amazon — SDE Intern, Cloud Architected Network</h3>
+              <span class="meta">Jun–Sep 2025 • Seattle</span>
+            </header>
+            <ul>
+              <li>Reduced engineering effort by ~200 hours/month and cut code review revisions by 50% by building CAN Tech Debt Detonator: AI system with memory, knowledge base, and ticketing integration.</li>
+              <li>Drove org-wide adoption across Amazon Traffic Engineering; presented to VP leadership.</li>
+            </ul>
+            <div class="tags">
+              <span>TypeScript</span><span>AWS</span><span>LLMs</span><span>SDK</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <header>
+              <h3>Omnyra — CEO & Principal Engineer</h3>
+              <span class="meta">2025–Present</span>
+            </header>
+            <ul>
+              <li>Achieved 95% accuracy in synthetic pathogen detection; scaled to 1,000+ concurrent evaluations with an AI-native biosecurity stack.</li>
+              <li>Secured FBI sponsorship and $200K Defense Innovation Unit funding.</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>Biosecurity</span><span>ML</span><span>MLOps</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <header>
+              <h3>Stanford Cardiovascular Biomechanics Lab — Software Engineer</h3>
+              <span class="meta">2024–Present</span>
+            </header>
+            <ul>
+              <li>Reduced cardiovascular network modeling time by 97% with a no-code vascular generator web app.</li>
+              <li>Designed a visualization platform for hemodynamic data; boosted analysis by ~40%.</li>
+            </ul>
+            <div class="tags">
+              <span>React</span><span>Flask</span><span>3D</span><span>Data Viz</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <header>
+              <h3>OpenAI — Project Director (Campus)</h3>
+              <span class="meta">2025–Present</span>
+            </header>
+            <ul>
+              <li>Designed and launched campus ambassadorship program; scaled engagement formats across multiple campuses.</li>
+            </ul>
+            <div class="tags">
+              <span>Community</span><span>Product</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-head">
+          <h2>Selected Projects</h2>
+          <p>High-signal work with public write-ups and code.</p>
+        </div>
+        <div class="grid">
+          <a class="project card reveal" href="#" target="_blank" rel="noreferrer">
+            <h3>Protformer — Text-Guided Protein Editing</h3>
+            <p>Multimodal GNN + transformer model for controllable protein editing with 250k proteins and 12 tasks.</p>
+            <div class="tags"><span>PyTorch</span><span>GNN</span><span>NLP</span></div>
+          </a>
+          <a class="project card reveal" href="#" target="_blank" rel="noreferrer">
+            <h3>ProtMAE — Masked Autoencoder for Protein Distance Maps</h3>
+            <p>Self-supervised ViT on 822k protein fragments; 78% secondary structure accuracy; 71% AUC in contact maps.</p>
+            <div class="tags"><span>ViT</span><span>SSL</span><span>BioML</span></div>
+          </a>
+          <a class="project card reveal" href="#" target="_blank" rel="noreferrer">
+            <h3>Optimized Organ Transport Logistics</h3>
+            <p>Benchmarking classical ML for organ delivery routes; presented at Citadel Datathon.</p>
+            <div class="tags"><span>Random Forest</span><span>XGBoost</span><span>Logistics</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Stanford CS & Biology. I like clean interfaces, robust systems, and kind teams.</p>
+        </div>
+        <div class="about split">
+          <div>
+            <h3>Focus</h3>
+            <ul class="bullets">
+              <li>Product-minded SWE with taste</li>
+              <li>Healthtech and AI platforms</li>
+              <li>Research to production</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Stack</h3>
+            <ul class="tags">
+              <li>Python</li><li>TypeScript</li><li>React</li><li>Flask</li><li>Node</li><li>MySQL</li>
+            </ul>
+            <p class="small">Also: numpy, PyTorch, scikit-learn, FastAPI, OpenAI/Anthropic APIs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Open to SWE roles. Best reached via email or LinkedIn.</p>
+        </div>
+        <div class="contact">
+          <a class="btn primary" href="mailto:emiilmm@stanford.edu">Email me</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/emilin-mathew/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/emilinmathew" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> Emilin Mathew • Built with care</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html> 
