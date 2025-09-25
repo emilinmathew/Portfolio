@@ -1,25 +1,7 @@
 (function() {
   const root = document.documentElement;
-  const toggle = document.getElementById('themeToggle');
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const stored = localStorage.getItem('emi-theme');
-
-  const setTheme = (mode) => {
-    if (mode === 'dark') document.body.classList.add('dark');
-    else document.body.classList.remove('dark');
-    localStorage.setItem('emi-theme', mode);
-  };
-
-  setTheme(stored || (prefersDark ? 'dark' : 'light'));
-
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      const isDark = document.body.classList.toggle('dark');
-      localStorage.setItem('emi-theme', isDark ? 'dark' : 'light');
-    });
-  }
 
   if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => {
