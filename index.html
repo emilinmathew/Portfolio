@@ -37,65 +37,56 @@
           </div>
         </div>
         <div class="hero-photo">
-          <img src="headshot.jpg" alt="Emilin Mathew portrait" loading="eager" decoding="async" width="1200" height="1200" />
+          <img src="headshot_memchu.jpg" alt="Emilin Mathew portrait" loading="eager" decoding="async" width="1200" height="1200" />
         </div>
       </section>
 
       <section id="work" class="section container">
         <div class="section-head">
           <h2>Highlights</h2>
-          <p>A few things I loved building.</p>
         </div>
-        <div class="timeline">
-          <article class="card reveal">
-            <header>
-              <h3>Palo Alto × Stanford Weekend — Cheap Bites</h3>
-            </header>
-            <p>Curated a student-friendly food crawl/weekend series building community across campuses.</p>
-          </article>
-
-          <article class="card reveal">
-            <header>
-              <h3>Amazon — Network Traffic Engineering AI</h3>
-            </header>
-            <p>Built AI systems to accelerate code health and engineering workflows for CAN.</p>
-          </article>
-
-          <article class="card reveal">
-            <header>
-              <h3>Cardiovascular Tech @ Stanford</h3>
-            </header>
-            <p>Tools for vascular modeling and hemodynamic visualization used by researchers.</p>
-          </article>
-
-          <article class="card reveal">
-            <header>
+        <div class="carousel">
+          <button class="carousel-btn prev" aria-label="Previous">←</button>
+          <div class="carousel-track" id="highlightTrack">
+            <article class="card slide">
               <h3>Omnyra — Biosecurity startup</h3>
-            </header>
-            <p>AI-native pathogen detection and evaluation infrastructure.</p>
-          </article>
+              <p>AI-native pathogen detection and evaluation infrastructure.</p>
+            </article>
+            <article class="card slide">
+              <h3>Palo Alto × Stanford Weekend — Cheap Bites</h3>
+              <p>Curated a student-friendly food crawl/weekend series building community across campuses.</p>
+            </article>
+            <article class="card slide">
+              <h3>Amazon — Network Traffic Engineering AI</h3>
+              <p>Built AI systems to accelerate code health and engineering workflows for CAN.</p>
+            </article>
+            <article class="card slide">
+              <h3>Cardiovascular Digital Twins</h3>
+              <p>Tools for vascular modeling and hemodynamic visualization used by researchers.</p>
+            </article>
+          </div>
+          <button class="carousel-btn next" aria-label="Next">→</button>
         </div>
       </section>
 
       <section id="projects" class="section container">
         <div class="section-head">
-          <h2>Selected Projects</h2>
-          <p>High-signal work with public write-ups and code.</p>
+          <h2>Projects</h2>
         </div>
         <div class="grid">
-          <a class="project card reveal" href="#" target="_blank" rel="noreferrer">
+          <a class="project card reveal" href="https://github.com/search?q=repo%3Aemilinmathew%2F*+Protformer&type=repositories" target="_blank" rel="noreferrer">
             <h3>Protformer — Text-Guided Protein Editing</h3>
-            <p>Multimodal GNN + transformer model for controllable protein editing with 250k proteins and 12 tasks.</p>
+            <p>Multimodal GNN + transformer for controllable protein edits.</p>
             <div class="tags"><span>PyTorch</span><span>GNN</span><span>NLP</span></div>
           </a>
-          <a class="project card reveal" href="#" target="_blank" rel="noreferrer">
-            <h3>ProtMAE — Masked Autoencoder for Protein Distance Maps</h3>
-            <p>Self-supervised ViT on 822k protein fragments; 78% secondary structure accuracy; 71% AUC in contact maps.</p>
+          <a class="project card reveal" href="https://github.com/search?q=repo%3Aemilinmathew%2F*+ProtMAE&type=repositories" target="_blank" rel="noreferrer">
+            <h3>ProtMAE — Protein Distance Maps</h3>
+            <p>Self-supervised ViT for protein structure signals.</p>
             <div class="tags"><span>ViT</span><span>SSL</span><span>BioML</span></div>
           </a>
-          <a class="project card reveal" href="#" target="_blank" rel="noreferrer">
+          <a class="project card reveal" href="https://github.com/emilinmathew?tab=repositories&q=organ&type=&language=&sort=" target="_blank" rel="noreferrer">
             <h3>Optimized Organ Transport Logistics</h3>
-            <p>Benchmarking classical ML for organ delivery routes; presented at Citadel Datathon.</p>
+            <p>Classical ML for delivery routes; datathon prototype.</p>
             <div class="tags"><span>Random Forest</span><span>XGBoost</span><span>Logistics</span></div>
           </a>
         </div>
@@ -110,9 +101,9 @@
           <div>
             <h3>Focus</h3>
             <ul class="bullets">
-              <li>AI × Bio tools</li>
-              <li>From research to product</li>
-              <li>Teams with taste</li>
+              <li>Biosecurity</li>
+              <li>AI engineering</li>
+              <li>Research → product</li>
             </ul>
           </div>
           <div>
